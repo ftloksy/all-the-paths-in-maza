@@ -1,6 +1,9 @@
 from Door import Door
 
-# top, right, bottom, left. 
+# Each room has four doors: top, right, bottom, and left.
+# Each room has a recorder to record
+# hasArrived: the program has walked through the room.
+# The x and y coordinates of the room are its location on the map.
 class Room:
   def __init__(self, 
       topDoor, 
