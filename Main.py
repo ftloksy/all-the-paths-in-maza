@@ -17,8 +17,8 @@ if __name__ == "__main__":
   mazeMap = MazeMap((mainRoom, rightRoom, bottomRoom))
   myRoute = Route(mazeMap)
 
-  # If the startRoom has any doors has don't go through
-  # still run `stepInMaze` method.
+  # If the startRoom has any doors that have not been gone through,
+  # still run the `stepInMaze` method.
   while not myRoute.isStartRoomAllDoorGoThrough():
     myRoute.stepInMaze()
 
